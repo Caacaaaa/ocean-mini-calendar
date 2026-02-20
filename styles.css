@@ -8,6 +8,7 @@
     font-style: normal;
 }
 body {
+    position: relative;
     margin: 0;
     width: 100%;
     height: 100vh;
@@ -30,6 +31,43 @@ body {
     justify-content: center;
     align-items: center;
 
+}
+
+.widget{
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.fishbubbles {
+    position: absolute;
+    left: -5px;
+    top: 10px;
+    width: 60px;
+    z-index: 3;
+}
+
+.whale {
+    position: absolute;
+    right: -25px;
+    bottom: 0px;
+    width: 110px;
+    z-index: 3;
+}
+
+.bubbles {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    width: 55px;
+    opacity: 0.8;
+}
+
+.fishbubbles,
+.whale,
+.bubbles{
+    pointer-events: none;
 }
 
 button,
